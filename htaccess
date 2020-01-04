@@ -1,0 +1,26 @@
+
+# HTID:10840170: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:10840170:
+
+#somthing
+
+RewriteEngine on
+
+#somthing
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#somthing
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+#somthing
+
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+#somthing
+
+RewriteRule ^(.*)$ $1.php [NC,L]
