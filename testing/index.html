@@ -16,6 +16,10 @@
     <link href="./index_files/core.min.css" rel="stylesheet">
     <link href="./index_files/thesaas.min.css" rel="stylesheet">
     <link href="./index_files/style.css" rel="stylesheet">
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json");
+    </script>
 
     <link rel="icon" href="assets/img/[Icon image link here somthing like ugh maybe somthing.ico]">
   </head>
@@ -107,13 +111,10 @@
       </section>
 
       <section class="section">
-        <script>
-          var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json");
-        </script>
         </head>
-        <div class="container">
+        <body>
           <div id="gameContainer" style="width: 990px; height: 560px; margin: auto"></div>
-        </div>
+        </body>
       </section>
     
     <section class="section bg-gray">
