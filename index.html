@@ -80,30 +80,13 @@
     <main class="main-content">
 
       <section class="section bg-grey1 pb-0 overflow-hidden hidden-sm-down">
-        <div class="container">
-          <header class="section-header">
-            <h2>DO you like <strong>numers</strong> cause ive got them now look these <strong>amazing</strong> numbers</h2>
-            <hr>
-            <p class="lead">Here is just a random</p>
-          </header>
-
-          <div class="flexbox flex-grow-all text-center mx-auto w-600">
-            
-            <div>
-              <span class="text-info fs-50">621</span><br>
-              <p>This is </p>
-            </div>
-
-            <div>
-              <span class="text-info fs-50">000</span><br>
-              <p></p>
-            </div>
-            
-          </div>
-
-          <br><br>
-
-        </div>
+        <script>
+          var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json");
+        </script>
+        </head>
+        <body>
+          <div id="gameContainer" style="width: 990px; height: 560px; margin: auto"></div>
+        </body>
       </section>
 
       <section class="section">
